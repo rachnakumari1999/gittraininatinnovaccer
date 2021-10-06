@@ -1,0 +1,37 @@
+Ans-1‌ ‌
+adduser‌ ‌bestbuddy‌‌
+adduser‌ ‌playbuddy‌
+‌
+‌
+‌
+Ans -2‌ ‌
+cd‌ ‌/home/bestbuddy‌‌
+sudo‌ ‌nano‌ ‌.bashrc‌ ‌‌
+echo‌ ‌“Hi‌ ‌Best‌ ‌Buddy”‌‌
+
+
+
+Ans-3 ‌
+cd‌ ‌/home/bestbuddy‌‌
+sudo‌ ‌nano‌ ‌.bashrc‌ ‌‌
+export‌ ‌BUDDYTYPE=”BEST”‌‌
+sudo‌ ‌su‌ ‌playbuddy‌‌
+export‌ ‌BUDDYTYPE=”PLAY”‌‌
+echo‌ ‌$BUDDYTYPE‌‌
+‌
+‌
+Ans -4‌ ‌
+sudo‌ ‌groupadd‌ ‌playgroup‌‌
+sudo‌ ‌usermod‌ ‌-a‌ ‌-G‌ ‌playgroup‌ ‌playbuddy‌‌
+id‌ ‌playbuddy‌‌
+‌
+Ans-5‌ ‌
+mkdir‌ ‌playdir‌‌
+ls‌‌
+
+ans-6
+sudo‌ ‌usermod‌ ‌-u+rw‌ ‌playdir‌‌
+sudo‌ ‌su‌ ‌bestbuddy‌‌
+sudo‌ ‌usermod‌ ‌-u+r‌ ‌playdir‌‌
+ls‌ ‌-l
+‌
